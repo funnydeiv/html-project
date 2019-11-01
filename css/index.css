@@ -4,15 +4,24 @@
 }
 
 #logo a {
-	margin-left: 20px;
-	font-weight: bold;
 	text-decoration: none;
 	font-size: 26px;
-	color: white;
+    color: white;
+
 }
+
+
 #logo p {
-    margin-left: 20px;
-	font-weight: bold;
+
+    font-size: 16px;
+
+
+}
+
+#logo {
+    margin-left: 200px;
+    color: white;
+    font-weight: bold;
 }
 
 nav > ul > li > a {
@@ -21,11 +30,18 @@ nav > ul > li > a {
     font-size: 18px;
     color:white;
 
+
 }
 
-
+nav li {
+    list-style: none;
+    float: left;
+    margin-right: 30px;
+    margin-top: -20px;
+}
 nav {
-
+    margin-left: 200px;
+    float: right;
     color: white;
 }
 header {
@@ -33,6 +49,53 @@ header {
 }
 
 header > section {
+   font-family: "Courier New", Courier, monospace;
+   font-weight: 100;
+   color: white;
+}
 
+.ph1 {
+    font-size: 36px;
+}
 
+.bold {
+    font-weight: bold;
+}
+
+.headerimg {
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+header section p {
+    margin: 10px 0px 10px 200px;
+    width: 454px;
+}
+
+#download1 {
+    margin: 50px 30px 0px 200px;
+    padding-bottom: 50px;
+}
+
+.store {
+    margin-right: 30px;
+    height: 38px;
+}
+
+#functions {
+    width: 454px;
+    margin-left: 200px;
+}
+
+#phone {
+    float: left;
+}
+#phone p {
+    float: right;
+}
+
+.ph2 {
+    margin: 10px;
+    font-size: 36px;
 }
