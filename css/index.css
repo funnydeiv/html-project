@@ -69,7 +69,7 @@ header > section {
 }
 
 header section p {
-    margin: 10px 0px 10px 200px;
+    margin: 10px 200px 10px 200px;
     width: 454px;
 }
 
@@ -89,13 +89,44 @@ header section p {
 }
 
 #phone {
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 230px;
+    font-family: "Courier New", Courier, monospace;
+
 }
-#phone p {
-    float: right;
+
+#phone div {
+        display: flex;
+        margin-left: 100px;
+        flex-direction: column;
+
+
 }
 
 .ph2 {
-    margin: 10px;
-    font-size: 36px;
+    font-size: 26px;
 }
+
+
+nav {
+    margin-right: 200px;
+}
+
+.green {
+    color:#2DC66D;
+}
+#know p {
+    margin: 0px 200px 0px 200px;
+}
+
+#know div img{
+    width:100%;
+    height:auto;
+
+}
+#know div p{
+    text-align: center;
+}
+
