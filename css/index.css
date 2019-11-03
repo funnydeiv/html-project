@@ -85,16 +85,14 @@ header section p {
 
 #functions {
     width: 454px;
-    margin-left: 200px;
 }
 
 #phone {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 230px;
     font-family: "Courier New", Courier, monospace;
-
+    margin: 50px 200px 50px 200px;
 }
 
 #phone div {
@@ -119,6 +117,8 @@ nav {
 }
 #know p {
     margin: 0px 200px 0px 200px;
+    font-family: "Courier New", Courier, monospace;
+    background-color: #F9F9F9;
 }
 
 #know div img{
@@ -126,7 +126,41 @@ nav {
     height:auto;
 
 }
+
 #know div p{
     text-align: center;
 }
 
+#example {
+    font-family: "Courier New", Courier, monospace;
+    margin: 50px 200px 50px 200px;
+}
+#example p {
+    width: 454px;
+
+}
+
+#example img {
+    width: 454px;
+}
+
+#example {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer p{
+
+
+    color:white;
+    width:454px;
+}
+
+footer div {
+    background-color: #2ECC71;
+    display: flex;
+    justify-content: center;
+
+}
