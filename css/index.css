@@ -152,10 +152,10 @@ nav {
 }
 
 footer p{
-
-
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
     color:white;
-    width:454px;
+    width:800px;
 }
 
 footer div {
@@ -163,4 +163,17 @@ footer div {
     display: flex;
     justify-content: center;
 
+}
+
+footer a {
+    margin-top: 50px;
+    text-decoration: none;
+	font-size: 26px;
+    color: white;
+}
+
+footer img {
+
+     width:100%;
+    height:auto;
 }
