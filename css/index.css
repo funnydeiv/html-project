@@ -7,15 +7,11 @@
 	text-decoration: none;
 	font-size: 26px;
     color: white;
-
 }
 
 
 #logo p {
-
     font-size: 16px;
-
-
 }
 
 #logo {
@@ -29,8 +25,6 @@ nav > ul > li > a {
     font-weight: bold;
     font-size: 18px;
     color:white;
-
-
 }
 
 nav li {
@@ -39,11 +33,13 @@ nav li {
     margin-right: 30px;
     margin-top: -20px;
 }
+
 nav {
     margin-left: 200px;
     float: right;
     color: white;
 }
+
 header {
     background-color: #2DC66D;
 }
@@ -62,10 +58,12 @@ header > section {
     font-weight: bold;
 }
 
-.headerimg {
+#headerimg {
     margin-left: 200px;
     margin-top: 50px;
     margin-bottom: 30px;
+    width: 64px;
+    height: 64px;
 }
 
 header section p {
@@ -96,11 +94,9 @@ header section p {
 }
 
 #phone div {
-        display: flex;
-        margin-left: 100px;
-        flex-direction: column;
-
-
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column;
 }
 
 .ph2 {
@@ -115,29 +111,30 @@ nav {
 .green {
     color:#2DC66D;
 }
+
 #know p {
     margin: 0px 200px 0px 200px;
     font-family: "Courier New", Courier, monospace;
-    background-color: #F9F9F9;
+    text-align: center;
 }
 
-#know div img{
+#know img{
     width:100%;
     height:auto;
 
 }
 
-#know div p{
-    text-align: center;
+#know div{
+    background-color: #F9F9F9;
 }
 
 #example {
     font-family: "Courier New", Courier, monospace;
     margin: 50px 200px 50px 200px;
 }
+
 #example p {
     width: 454px;
-
 }
 
 #example img {
@@ -148,7 +145,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 footer p{
@@ -162,7 +158,6 @@ footer div {
     background-color: #2ECC71;
     display: flex;
     justify-content: center;
-
 }
 
 footer a {
@@ -173,7 +168,6 @@ footer a {
 }
 
 footer img {
-
-     width:100%;
+    width:100%;
     height:auto;
 }
