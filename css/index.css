@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli|Sonsie+One&display=swap');
+:root {
+    font-family: 'Muli', sans-serif;
+}
 
 div,p, nav, h1 ,h2,h3,h4,h5,h6,footer,main{
 	margin: 0;
@@ -71,16 +74,46 @@ header .banner {
     display: flex;
     background-image: url(../img/header.png);
     min-height: 466px;
-    background-position: center;
     flex-direction: column;
     justify-content: center;
 }
 
 header .banner p {
     color:white;
+    align-items: center;
 }
 
 header .banner #headerimg {
-    width: 64px;
+    width: 72px;
     margin-bottom: 50px;
+    align-self: center;
+}
+
+header .banner .ph1 {
+    font-size: 2.5rem;
+}
+header .banner .banner-text {
+    text-align: center;
+}
+header .banner .banner-text .bold{
+    font-weight: bold;
+}
+
+header .banner .download {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+@media(min-width: 600px) {
+    header .banner #headerimg {
+    align-self: flex-start;
+    }
+    header .banner .banner-text {
+    text-align: left;
+    width: 400px;
+    }
+    header .banner {
+        background-position: center;
+    }
 }
