@@ -72,8 +72,8 @@ header nav .menu li a:hover {
 
 header .banner {
     display: flex;
-    background-image: url(../img/header.png);
     min-height: 466px;
+    background-color:#2ECC71;
     flex-direction: column;
     justify-content: center;
 }
@@ -105,7 +105,7 @@ header .banner .download {
     margin-top: 30px;
 }
 
-@media(min-width: 600px) {
+@media(min-width: 672px) {
     header .banner #headerimg {
     align-self: flex-start;
     }
@@ -114,6 +114,34 @@ header .banner .download {
     width: 400px;
     }
     header .banner {
+        background-image: url(../img/header.png);
         background-position: center;
     }
+    header .banner .download {
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    header .banner .download a{
+        margin-left: 10px;
+    }
+    header .banner{
+        padding-left: 30px;
+    }
+}
+
+main .phone img {
+    width: 310px;
+
+}
+
+main .phone .phone-text .ph2 {
+    font-size: 2.5rem;
+}
+
+main .phone .phone-text p {
+    text-align: center;
+}
+
+.green {
+    color:#2ECC71;
 }
