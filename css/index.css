@@ -145,3 +145,39 @@ main .phone .phone-text p {
 .green {
     color:#2ECC71;
 }
+
+main .phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 780px) {
+    main .phone {
+        justify-content: space-around;
+    }
+    main .phone .phone-text {
+        align-self: center;
+    }
+    main .phone .phone-text p {
+        text-align: right;
+    }
+}
+
+.know {
+    display: flex;
+    background-color: #F9F9F9;
+}
+
+.know  p{
+    text-align: center;
+}
+
+.know .know-text {
+    margin-top: 20px;
+    max-width: 440px;
+}
+
+.know .ph2 {
+    font-size: 2rem;
+}
