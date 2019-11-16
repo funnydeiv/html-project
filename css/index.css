@@ -11,10 +11,12 @@ ul {
     margin-bottom: 0;
 }
 
-body {
+
+header .header-bg, main .main-bg, footer .footer-bg{
     max-width: 960px;
     margin: auto;
 }
+
 
 header nav #logo {
     text-align: center;
@@ -59,8 +61,10 @@ header nav .menu li a:hover {
     border: 1px solid white;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 580px) {
     header nav #logo {
+        margin-left: 30px;
+        margin-top:10px;
         text-align: left;
     }
     header nav {
@@ -116,6 +120,7 @@ header .banner .download {
     header .banner {
         background-image: url(../img/header.png);
         background-position: center;
+        background-size: cover;
     }
     header .banner .download {
         justify-content: flex-start;
@@ -146,6 +151,8 @@ main .phone .phone-text p {
 }
 
 main .phone {
+    margin-top:70px;
+    margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -169,7 +176,7 @@ main .phone {
 
 .know {
     display: flex;
-    background-image: url(../img/know.jpg);
+    background-image: url(../img/know.png);
     background-size: 980px 441px;
     scale: 0.5;
     background-position: center;
@@ -197,7 +204,7 @@ main .phone {
 }
 
 .example {
-    margin: 10px 0 20px 0;
+    margin: 70px 0 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,8 +247,10 @@ footer .footer-div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(../img/download.png);
-    background-size: cover;
+    justify-content: space-around;
+    background-color: #2ECC71;
+    min-height: 215px;
+    background-size: contain;
     background-position: center;
 }
 
@@ -259,5 +268,26 @@ footer .footer-div{
 }
  
  .footer-div .footer-text {
-    
+    max-width: 545px;
  }
+
+ @media(min-width:732px) {
+    .footer-div{
+        background-image: url(../img/download.png);
+        background-repeat: no-repeat;
+    }
+ }
+
+
+ .footer-div a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 1.5rem;
+ }
+
+ .footer-div a:hover {
+    border: 1px solid white;
+}
