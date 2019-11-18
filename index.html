@@ -23,7 +23,7 @@
             <a href="index.html" id="about">slimming app</a>
           </div>
           <ul class="menu">
-            <li><a href="index.html">Home </a></li>
+            <li><a href="index.html" data-toggle="modal" data-target="#rateModal">Rate </a></li>
             <li>
               <a href="" data-toggle="modal" data-target="#contactModal"
                 >Contact
@@ -131,7 +131,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="contactModalScrollableTitle">
-              Modal title
+              Contact
             </h5>
             <button
               type="button"
@@ -172,7 +172,7 @@
                   type="email"
                   name="_replyto"
                   class="form-control"
-                  id="contactInputEmail1"
+                  id="contactEmail"
                   aria-describedby="emailHelp"
                   placeholder="Enter email"
                   required
@@ -203,6 +203,83 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="rateModal" tabindex="-1" role="dialog" aria-labelledby="rateModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rateModalScrollableTitle">Rate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form id="rate-form">
+          <div class="form-group">
+              <label for="rateName">Your name</label>
+              <input type="text" name="name" class="form-control" id="rateName" placeholder="John" required>
+          </div>
+          <div class="form-group">
+              <label for="contactMessage">Your message</label>
+              <textarea
+                class="form-control"
+                name="message"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+          <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Rate</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                    <label class="form-check-label" for="gridRadios1">
+                      1 &#9733;. It`s awful!
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">
+                      2 &#9733;. It could be better.
+                    </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                      <label class="form-check-label" for="gridRadios3">
+                        3 &#9733;. Normal.
+                      </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option4">
+                        <label class="form-check-label" for="gridRadios4">
+                          4 &#9733;. Good.
+                        </label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios5" value="option5" checked>
+                          <label class="form-check-label" for="gridRadios5">
+                            5 &#9733;. The best program ever!
+                          </label>
+                        </div>
+      
+                </div>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
