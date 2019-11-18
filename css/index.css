@@ -51,15 +51,34 @@ header nav .menu li {
 header nav .menu li a {
     text-decoration: none;
     color: white;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    border-radius: 30px;
     text-transform: uppercase;
     padding: 5px;
     margin: 0 10px 0 10px;
 }
 
-header nav .menu li a:hover {
-    border: 1px solid white;
+header nav .menu .get-app-li a {
+    text-decoration: none;
+    color: #2ECC71;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 0 10px 0 10px;
 }
+
+
+header nav .menu li a:hover {
+    border: 2px solid white;
+}
+header nav .menu .get-app-li a:hover {
+    background-color: transparent;
+    color: white;
+}
+
 
 @media (min-width: 580px) {
     header nav #logo {
@@ -281,13 +300,18 @@ footer .footer-div{
 
  .footer-div a {
     text-decoration: none;
-    color: white;
-    border: 1px solid transparent;
+    color: #2ECC71;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 30px;
     text-transform: uppercase;
     padding: 5px;
+    margin: 0 10px 0 10px;
     font-size: 1.5rem;
  }
 
  .footer-div a:hover {
-    border: 1px solid white;
+    background-color: transparent;
+    color: white;
 }
