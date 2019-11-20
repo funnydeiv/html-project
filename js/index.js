@@ -28,3 +28,22 @@ function clockStop() {
   clearInterval(timerId);
   timerId = null;
 }
+
+document.querySelector('.rate-form input[type=submit]')
+    .addEventListener('click', rate);
+
+function rate(e) {
+    e.preventDefault();
+    fetch('rate', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: JSON.stringify({
+            name: document.querySelector('.rate-form input[name=name]').value,
+            message: document.querySelector('.rate-form input[name=message]').value
+        })
+    })
+        .then(_ => document.querySelector('.rate-form').reset());
+}
