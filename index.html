@@ -25,7 +25,7 @@
           <ul class="menu">
             <li>
             <a href="" id="clock-a" data-toggle="modal" data-target="#clockModal"
-                >Clock
+                >Rate
               </a>
               <a href="" data-toggle="modal" data-target="#contactModal"
                 >Contact
@@ -185,7 +185,7 @@
                 <textarea
                   class="form-control"
                   name="message"
-                  id="exampleFormControlTextarea1"
+                  id="contactMessage"
                   rows="3"
                   required
                 ></textarea>
@@ -231,40 +231,44 @@
           </div>
           <div class="modal-body">
             <form class="rate-form">
-            
-            <div class="form-group">
-                <label for="emailInput">Email address</label>
-                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">Not optional.</small>
-            </div>
-            <label>
-                Message: <input type="type" name="message">
-            </label>
-            <br>
-            <div class="form-check">
-                <div class="custom-control custom-radio custom-control-inline">
-                    <label class="custom-control-label" for="customRadioInline1">1&#9733;</label>
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <div class="form-group">
+                    <label for="nameInput">Name:</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name/nickname" name="name" required autofocus>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <label class="custom-control-label" for="customRadioInline2">2 &#9733;</label>
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <div class="form-group">
+                    <label for="emailInput">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" name="email" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Not optional.</small>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <label class="custom-control-label" for="customRadioInline3">3 &#9733;</label>
-                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                <div class="form-group">
+                    <label for="messageTextarea">Comment</label>
+                    <textarea class="form-control" name="message" id="messageTextarea" rows="3"></textarea>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <label class="custom-control-label" for="customRadioInline4">4 &#9733;</label>
-                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                <div class="form-check">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="rate1" name="rateRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="rate1">1&#9733;</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="rate2" name="rateRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="rate2">2 &#9733;</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="rate3" name="rateRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="rate3">3 &#9733;</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="rate4" name="rateRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="rate4">4 &#9733;</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="rate5" name="rateRadio" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="rate5">5 &#9733;</label>
+                    </div>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <label class="custom-control-label" for="customRadioInline5">5 &#9733;</label>
-                    <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+                <input type="submit" class="btn btn-primary">
+            </form>
+        </div>
           <div class="modal-footer">
             <button
               type="button"
@@ -275,8 +279,8 @@
               Close
             </button>
           </div>
-        </div>
       </div>
+    </div>
     </div>
 
     <script src="js/index.js"></script>
