@@ -11,7 +11,7 @@ function rate(e) {
         body: JSON.stringify({
             name: document.querySelector('.rate-form input[name=name]').value,
             email: document.querySelector('.rate-form input[name=email]').value,
-            message: document.querySelector('.rate-form input[name=message]').value
+            message: document.querySelector('.rate-form textarea[name=message]').value
         })
     })
         .then(_ => document.querySelector('.rate-form').reset());
