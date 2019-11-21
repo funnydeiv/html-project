@@ -1,3 +1,2 @@
-{"name":"","email":"","message":""}
-{"name":"","email":"","message":""}
-{"name":"fd","email":"","message":""}
+{"name":"John","email":"john@gmail.com","message":"Very good app! 5 stars!!!!!!!★★★★","rate":"5 ★"}
+{"name":"Monika","email":"monika@gmail.com","message":"Good app!","rate":"4 ★"}
