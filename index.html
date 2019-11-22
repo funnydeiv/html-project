@@ -13,16 +13,18 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/animate.css">
+    
   </head>
   <body>
     <header>
       <div class="header-bg">
         <nav>
-          <div id="logo">
+          <div id="logo"  class = "wow fadeInDown">
             <a href="index.html">FitApp</a>
             <a href="index.html" id="about">slimming app</a>
           </div>
-          <ul class="menu">
+          <ul class="menu wow fadeInDown">
             <li>
             <a href="" id="clock-a" data-toggle="modal" data-target="#clockModal"
                 >Rate
@@ -46,13 +48,13 @@
           </div>
           <div class="download-bn">
             <a href=""
-              ><img src="img/appstore.png" alt="AppStore" class="store"
+              ><img src="img/appstore.png" alt="AppStore" class="store wow fadeIn"
             /></a>
             <a href=""
               ><img
                 src="img/playmarket.png"
                 alt="GooglePlayMarket"
-                class="store"
+                class="store wow fadeIn"
             /></a>
           </div>
         </div>
@@ -63,10 +65,10 @@
       <div class="main-bg">
         <div class="phone">
           <div class="phone-text">
-            <p class="ph2">
+            <p class="ph2 wow fadeInRight">
               Best calorie <span class="green">counter&nbsp;app!</span>
             </p>
-            <p class="p2">
+            <p class="p2 wow fadeInRight">
               Free version include all functions without restrictions!
             </p>
           </div>
@@ -74,7 +76,7 @@
         </div>
 
         <div class="know">
-          <div class="know-text">
+          <div class="know-text wow zoomIn">
             <p class="ph2">
               Simple way to <span class="green">plan&nbsp;your&nbsp;diet!</span>
             </p>
@@ -87,7 +89,7 @@
         </div>
 
         <div class="example">
-          <div class="example-text">
+          <div class="example-text wow fadeInLeft">
             <p class="ph2">
               Manage your <span class="green">meal&nbsp;time</span>
             </p>
@@ -104,7 +106,7 @@
     <footer id="get-app">
       <div class="footer-bg">
         <div class="footer-div">
-          <div class="footer-text">
+          <div class="footer-text wow fadeIn">
             <p class="ph1">
               Download FitApp for free and <span class="bold">enjoy!</span>
             </p>
@@ -114,7 +116,7 @@
               site symu.co.
             </p>
           </div>
-          <div class="download-bn">
+          <div class="download-bn wow fadeIn">
             <a href="">DOWNLOAD</a>
           </div>
         </div>
@@ -300,5 +302,10 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
   </body>
 </html>
