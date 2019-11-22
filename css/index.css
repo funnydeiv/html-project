@@ -222,7 +222,6 @@ main .phone {
   display: flex;
   background-image: url(../img/know.png);
   background-size: 980px 441px;
-  scale: 0.5;
   background-position: center;
   justify-content: center;
   height: 441px;
